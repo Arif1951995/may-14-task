@@ -1,0 +1,44 @@
+marquee {
+    background-color: #ed484c;
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+}
+marquee mark {
+    margin: 0 5px;
+    padding: 0 5px;
+}
+nav {
+    background-color: #4c4c4c;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: flex-end;
+    
+
+
+}
+nav ul {
+    flex: 5;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    list-style: none; 
+}
+nav li {
+    margin: 0 30px;
+}
+
+@media (max-width: 800px) {
+    nav li{
+    margin-right: 5px;        
+
+    }
+}
+img.logo {
+    width: 10%;
+    height: 80%;
+    margin-left: 10px;
+    justify-self: start;
+    flex: 1;
+}
