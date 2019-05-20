@@ -1,3 +1,7 @@
+body {
+    /* background-image: url("images/floral.png"); */
+
+}
 marquee {
     background-color: #ed484c;
     font-size: 1.5em;
@@ -9,36 +13,197 @@ marquee mark {
     padding: 0 5px;
 }
 nav {
-    background-color: #4c4c4c;
     display: flex;
-    align-items: center;
+    background: #4c4c4c;
     height: 50px;
-    justify-content: flex-end;
+    justify-content: center;
+   
     
-
-
-}
-nav ul {
-    flex: 5;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    list-style: none; 
-}
-nav li {
-    margin: 0 30px;
-}
-
-@media (max-width: 800px) {
-    nav li{
-    margin-right: 5px;        
-
-    }
 }
 img.logo {
-    width: 10%;
-    height: 80%;
-    margin-left: 10px;
-    justify-self: start;
-    flex: 1;
+    height: 100%;
+    margin-left: 3%;
+}
+nav ul {
+    
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    font-size: 1.5em;
+}
+nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+section#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/floral.png");
+    background-color: #f18d97;
+    min-height: 40vh;
+}
+ p {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 25px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+section#intro button {
+    padding: 10px 50px;
+    border: none;
+    background-color: #160d0e;
+    color: indianred;
+    font-size: 1.5em;
+
+}
+section#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efece7;
+    background-image: url("images/floral.png");
+
+
+}
+section#services > div {
+    display: flex;
+}
+section#services img {
+    width: 100px;
+
+}
+section#services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+section#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/floral.png");
+    background-color: #ddceb4;
+    margin-bottom: 0;
+
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects .project {
+    width: 20%;
+    display: hidden;
+    background-color: transparent;
+    
+    
+}
+.project figcaption {
+    position: relative;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 0;
+    color: white;   
+    width: 250px;
+    
+    
+    
+    
+}
+.project:hover figcaption {
+    opacity: 0.7;
+    background-color: black;
+}
+.project:hover img {
+  
+    
+    
+}
+
+.projects img {
+    width: 250px;
+    border-radius: 10px;
+   
+   
+    
+    
+}
+.far {
+    color: white;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+ i {
+    margin: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 100%;
+}
+section#contact {
+    background-color: #AFC7C6;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    background-image: url("images/floral.png");
+
+}
+#contact i {
+    padding: 30px;
+    font-size: 3em;
+    color: #212121;
+
+}
+footer {
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p, footer i {
+    border: none;
+    padding: 0;
+}
+footer .fas {
+    padding: 0;
+    margin: 0 5px;
+}
+footer:hover i {
+    color: red;
+}
+@media (max-width: 768px) {
+    section#services > div {
+        flex-direction: column;
+    }
+    .projects .project {
+        width: 30%;
+    }
+}
+@media (max-width: 500px) {
+    .projects .project {
+        width: 50%;
+    }
+    nav li {
+        margin-left: 20px;
+    }
 }
