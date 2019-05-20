@@ -146,13 +146,7 @@ section#portfolio {
 .far {
     color: white;
 }
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-}
+
  i {
     margin: 10px;
     border: 2px solid white;
@@ -160,10 +154,14 @@ section#portfolio {
     border-radius: 100%;
 }
 section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #AFC7C6;
     margin: 0;
     padding: 0;
-    height: 30vh;
+    height: 50vh;
     background-image: url("images/floral.png");
 
 }
@@ -179,6 +177,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 20vh;
 }
 footer p, footer i {
     border: none;
@@ -206,4 +205,12 @@ footer:hover i {
     nav li {
         margin-left: 20px;
     }
+    .contact-link {
+        margin-right: 90px;
+    }
+}
+h2  {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2em;  
 }
