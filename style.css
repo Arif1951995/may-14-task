@@ -101,6 +101,7 @@ section#portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .projects .project {
     width: 20%;
@@ -111,15 +112,16 @@ section#portfolio {
 }
 .project figcaption {
     position: relative;
-    bottom: 50%;
+    bottom: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    visibility: visible;
-    opacity: 0;
+  visibility: hidden;
+   
     color: white;   
     width: 250px;
+    
     
     
     
@@ -128,6 +130,7 @@ section#portfolio {
 .project:hover figcaption {
     opacity: 0.7;
     background-color: black;
+    visibility: visible;
 }
 .project:hover img {
   
@@ -171,6 +174,9 @@ section#contact {
     color: #212121;
 
 }
+#contact .icons {
+    margin-top: 40px;
+}
 footer {
     background-color: #212121;
     color: white;
@@ -209,6 +215,21 @@ footer:hover i {
         margin-right: 90px;
     }
 }
+@media (max-width: 400px) {
+   nav ul {
+    width: 30%;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.projects .project {
+    width: 100%;
+}
+#contact i {
+    padding: 20px;
+    font-size: 2em;
+}
+}
+
 h2  {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
