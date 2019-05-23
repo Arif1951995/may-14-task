@@ -1,9 +1,13 @@
 
+header {
+    margin-top: -10px;
+}
 marquee {
     background-color: #ed484c;
     font-size: 1.5em;
     padding: 10px;
     color: white;
+
 }
 marquee mark {
     margin: 0 5px;
@@ -28,9 +32,10 @@ nav ul {
     margin-left: auto;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    font-size: 1.5em;
+    width: 30%;
+    font-size: 1.2em;
 }
+
 nav a {
     text-decoration: none;
     color: #b0b0b0;
@@ -75,8 +80,9 @@ section#services {
 section#services > div {
     display: flex;
 }
-section#services img {
-    width: 100px;
+section#services i {
+    font-size: 5em;
+    border: none;
 
 }
 section#services .service {
@@ -208,7 +214,7 @@ h2  {
         margin-left: 20px;
     }
     .contact-link {
-        margin-right: 90px;
+        margin-right: 150px;
     }
 }
 @media (max-width: 400px) {
@@ -216,6 +222,10 @@ h2  {
     width: 30%;
     font-size: 0.8em;
     margin-right: 10px;
+
+}
+.contact-link {
+    margin-right: 90px;
 }
 .projects .project {
     width: 100%;
